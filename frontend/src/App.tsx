@@ -1,4 +1,4 @@
-import Navbar from 'components/Navbar';
+import Navbar from 'components/NavBar';
 import Form from 'pages/Form';
 import Listing from 'pages/Listing';
 import {
