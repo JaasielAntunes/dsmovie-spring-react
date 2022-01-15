@@ -12,6 +12,12 @@ header {
     color: #fff;
 }
 
+.dsmovie-logo {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+
 .dsmovie-nav-content-h1 {
     margin: 0;
     font-weight: 700;
