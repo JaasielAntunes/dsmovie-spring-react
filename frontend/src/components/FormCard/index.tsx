@@ -11,7 +11,6 @@ type Props = {
 };
 
 function FormCard({ movieId }: Props) {
-
   const navigate = useNavigate;
 
   const [movie, setMovie] = useState<Movie>();
@@ -34,19 +33,18 @@ function FormCard({ movieId }: Props) {
 
     const config: AxiosRequestConfig = {
       baseURL: BASE_URL,
-      method: 'PUT',
-      url: '/scores',
+      method: "PUT",
+      url: "/scores",
       data: {
         email: email,
         movieId: movieId,
-        score: score
-      }
-    }
+        score: score,
+      },
+    };
 
-    axios(config).then(response => {
+    axios(config).then((response) => {
       navigate("/");
     });
-    
   };
 
   return (
